@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dining</title>
+<link rel="stylesheet" href=.godel/w3.css>
+<link rel="stylesheet" href=.godel/prism-twilight.css data-noprefix/>
+<meta charset=utf-8>
+</head>
+<body>
+<script src=file:///C:/cygwin64//home/USER/github/godel/scripts/js/godel.js></script>
+<script src=file:///C:/cygwin64//home/USER/github/godel/scripts/js/prism/prism.js></script>
+<div class="w3-bar w3-border w3-indigo w3-medium">
+  <div><a href=.godel/ghtm.tcl type=text/txt class="w3-bar-item w3-button w3-hover-red">Edit</a></div>
+  <div><a href=.godel/vars.tcl type=text/txt class="w3-bar-item w3-button w3-hover-red">Values</a></div>
+  <div><a href=file:///C:/cygwin64//home/USER/github/godel/plugin/gdraw/gdraw_default.tcl type=text/txt class="w3-bar-item w3-button w3-hover-red w3-right">Src</a></div>
+  <div><a href=.index.htm type=text/txt class="w3-bar-item w3-button w3-hover-red w3-right">HTML</a></div>
+  <div><a href=file:///C:/cygwin64//home/USER/github/godel/docs/help/.index.htm class="w3-bar-item w3-button w3-hover-red w3-right">Help</a></div>
+  <div><a href=file:///C:/cygwin64//home/USER/data/CENTER/pagelist/.index.htm class="w3-bar-item w3-button w3-hover-red w3-right">Pages</a></div>
+  <button class="w3-button w3-hover-red" onclick="do_gg()">Save</button>
+</div>
+<textarea rows=10 cols=70 id="text_board" style="display:none;font-size:10px"></textarea>
+<div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<input type=text id=filter_input onkeyup=filter_gnotes() placeholder="Search..." autofocus>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 101 </span>
+Lawry's勞瑞斯牛肋排餐廳</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 101 A4</span>
+香茅廚泰式餐廳新光A4店</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 101</span>
+鼎泰豐</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 吴兴街</span>
+大王麻辣乾麵 KingSpicy</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 延吉街</span>
+麻辣壹號店</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 延吉街</span>
+醉麻辣</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei</span>
+French Windows 琺蘭綺瑥朵茶餐館</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 松烟</span>
+11 Cafe' 早午餐 & 創意義大利麵專賣店</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 松烟</span>
+AWESOME BURGER</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei</span>
+KONGBUL</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei</span>
+胡饕米粉湯•黑白切</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 光復南路</span>
+The Shrimp Daddy 蝦老爹美食海鮮</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 光復南路</span>
+溫德德式烘焙餐館(大安店)</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 光復南路</span>
+起家雞韓式炸雞 光復店</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 市民</span>
+布娜飛比利時啤酒餐廳 Bravo Beer 台北市民店</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 延吉街</span>
+大師兄銷魂麵舖-忠孝店</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei</span>
+小滿苑燒肉 KOMITSU yakiniku
+延吉街</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei</span>
+Dancing Pig 豬跳舞小餐館</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei </span>
+先進海產店</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei 鹅肉 中山区 台北 吉林路</span>
+阿城鵝肉</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>新竹 hsinchu night barbecue</span>
+私嚐壹
+私嚐貳</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>新竹 hsinchu noon japanese</span>
+鼎泰豐</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>新竹 hsinchu noon japanese</span>
+SPASSO</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>新竹 hsinchu noon japanese</span>
+禧樂 丼飯 刺身 炭燒</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>新竹 hsinchu korean</span>
+小蒙牛頂級麻辣養生鍋-新竹晶品城店 ×××××</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>新竹 hsinchu</span>
+阿華什錦麵</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>新竹 hsinchu</span>
+YATS葉子 Stay to eat</pre>
+</div>
+<div class="gnotes w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+<pre><span class=keywords style=color:red>taipei korean</span>
+2018/6/17 Sun.
+Broccoli beer韓國餐酒食堂, 我们四</pre>
+</div>
+</body>
+</html>
