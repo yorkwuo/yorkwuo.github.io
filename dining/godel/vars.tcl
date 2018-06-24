@@ -1,0 +1,5 @@
+set vars(g:class)                            "lifestyle"
+set vars(g:keywords)                         ""
+set vars(g:pagename)                         "dining"
+set vars(last_updated)                       "2018-06-24_0819"
+set vars(toc)                                ""
